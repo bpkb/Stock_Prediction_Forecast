@@ -5,27 +5,27 @@ Created on Sun Aug 13 19:25:39 2023
 @author: PKB17
 
 Tools Used
-Streamlit
-
-Requests
-
-YFinance
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Plotly
-
-DateTime
-
-MinMaxScaler
-
-TensorFlow
-
-Scikit-learn
+  Streamlit
+  
+  Requests
+  
+  YFinance
+  
+  Pandas
+  
+  NumPy
+  
+  Matplotlib
+  
+  Plotly
+  
+  DateTime
+  
+  MinMaxScaler
+  
+  TensorFlow
+  
+  Scikit-learn
 
 Description
 This project focuses on stock market forecasting using LSTM neural networks. It allows users to select a country and a stock to analyze. The application provides insights into the selected company's sector, industry, and website. It also displays the latest stock data and a historical performance graph. Users can choose the number of forecast days to predict future stock prices.
