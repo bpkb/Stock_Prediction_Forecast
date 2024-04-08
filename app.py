@@ -271,11 +271,13 @@ temp_input=temp_input[0].tolist()
 lst_output=[]
 n_steps=30
 i=0
+now=datetime.datetime.now()
+print(f"Time: {now}")
 while(i<forecast_day):
 
     if(len(temp_input)>30):
         x_input=np.array(temp_input[1:])
-        print("{} day input {}".format(i,x_input))
+        # print("{} day input {}".format(i,x_input))
         x_input=x_input.reshape(1,-1)
         x_input = x_input.reshape((1, n_steps, 1))
         yhat = model.predict(x_input, verbose=0)
@@ -287,7 +289,7 @@ while(i<forecast_day):
     else:
         x_input = x_input.reshape((1, n_steps,1))
         yhat = model.predict(x_input, verbose=0)
-        print(yhat[0])
+        # print(yhat[0])
         temp_input.extend(yhat[0].tolist())
         print(len(temp_input))
         lst_output.extend(yhat.tolist())
